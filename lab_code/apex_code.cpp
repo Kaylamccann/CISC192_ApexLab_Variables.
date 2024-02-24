@@ -15,8 +15,16 @@ void minutes_to_12hour_time(stringstream &cin, stringstream &cout) {
     // Use cout for your final solution.
 
     // First you want to get user input with cin
+    int minutesIn;
+    int hoursOut, minutesOut;
+    cin >> minutesIn;
+    
     // Do any needed calculations
+    hoursOut = minutesIn / 60;
+    minutesOut = minutesIn % 60;
+    
     // Create output with cout
+    cout << hoursOut << ":" << " !";
 }
 
 void numbers_to_12hour_time(stringstream& cin, stringstream& cout)
